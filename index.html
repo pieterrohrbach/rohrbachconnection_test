@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>American Jazz</title>
+  	<link rel="stylesheet" href="AmericanJazz.css"></link> 
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1 id="title">American Jazz</h1>
+    
+    <p>
+    Pieter, je hebt zojuist je Sinterklaasgedicht als een baas, nee, als een Pieterbaas voorgedragen. 
+    Er staat nog één obstakel tussen jou en je cadeau: een kleine quiz.
+    Vul hieronder acht namen in van games, films en televisieseries waar in het gedicht naar verwezen wordt.
+    Iedere keer als je een juiste naam hebt ingevuld, komt die in de lijst hieronder te staan,
+    zodat je kunt zien welke namen je al gehad hebt.
+    </p>
+        
+    <input type="text" id="box" onkeyup="checkInput()">
+    
+    <div id="answers">
+      <h2>Antwoorden</h2>
+      <ol>
+        <li id="1"></li>
+        <li id="2"></li>
+        <li id="3"></li>
+        <li id="4"></li>
+        <li id="5"></li>
+        <li id="6"></li>
+        <li id="7"></li>
+        <li id="8"></li>            
+      </ol>
+      
+      <h3 id="final">Je hebt nog niet alle antwoorden gevonden.</h3> 
+      <audio id="music"></audio>
+    </div>
+    
+    <script src="./scripts/AmericanJazz.js"></script>
+  </body>
+</html>

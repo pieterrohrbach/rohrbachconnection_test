@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/rohrbach.css"></link> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body class="main">
+    <div class="navigate">
+      <ul>
+    	  <a href="Biography.html"><li><p>BIOGRAPHY</p></li></a><!
+    		--><a href="Music.html"><li><p>MUSIC</p></li></a><!
+    	  --><a href="Shows.html"><li><p>SHOWS</p></li></a><!
+    	  --><a href="Photos.html"><li><p>PHOTOS</p></li></a><!
+    	  --><a href="Contact.html"><li><p>CONTACT</p></li></a>
+    	</ul>  
+    </div>
+    <div class="content">
+      <article class="contact">
+        <h1>Contact and booking</h1>
+        
+        <p><a href="mailto:info@rohrbachconnection.com">info@rohrbachconnection.com</a></p>
+        
+        <div class="firstlink"><a href="https://www.facebook.com/rohrbachconnection"><div class="facebook"></div></a></div><!
+        --><a href="https://www.youtube.com/channel/UCWlV7AjoWwaP9HKzToEKaHQ"><div class="youtube"></div></a>
+
+        <p>For booking, media inquiries or other contact you can also fill out this form.</p>
+        
+        <iframe name="dummy" style="display:none;"></iframe>
+        <form action="../scripts/MailHandler.php" method="post" target="dummy">
+          <div>Name:</div> <input type="text" name="name" id="name"><br>
+          <div>E-mail:</div> <input type="text" name="email" id="email"><br>
+          <br>
+          <textarea class="message" name="message" id="message" rows="30" cols="60"></textarea><br>
+          <br>
+          <input type="submit" value="Submit" onclick="messageSent()">
+        </form>
+        <script>
+function messageSent() {
+    var message;
+    name = $("#name").val();
+    email = $("#email").val();
+    message = $("#message").val();
+    message = message.trim();
+    email = email.trim();
+    name = name.trim();
+    composite = name + email + message;
+    if (composite != "")
+    {
+        alert("Thank you for your message.");
+    }
+}
+        </script>
+      </article>  
+    </div>
+    <div class="picture"></div>
+    <div class="picture col"></div>    
+  </body>
+</html>
